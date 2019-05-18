@@ -1,0 +1,7 @@
+---
+- name: Copy HTML file to host
+  copy: 
+    src: files/index.html
+    dest: /etc/nginx/html
+  notify:
+  - restart nginx

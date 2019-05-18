@@ -1,0 +1,8 @@
+---
+# handlers file for /home/amit/Desktop/ansible/nginx
+
+- name: restart nginx
+  service: 
+    name: nginx
+    state: restarted
+    
